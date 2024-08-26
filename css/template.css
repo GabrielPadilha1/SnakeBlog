@@ -17,15 +17,128 @@ body,
 }
 html,
 body {
-    font-family: Roboto sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
 }
 body {
     background-color: rgb(150, 193, 210);
+    background-image: url('/image/snakebg2.png');
+    background-attachment: fixed;
 }
 #wrap {
-    background-color: rgb(176, 148, 82);
+
     max-width: 1024px; 
     min-width: 280px;
     margin: auto; 
+}
+
+/* Reset de formulários */
+input, button{
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem .75rem;
+    border: none;
+}
+
+/********************
+***** Cabeçalho *****
+*********************/
+
+#wrap>header {
+    background-color:rgb(106, 176, 204);
+    margin: .25rem;
+    border-radius: .8rem;
+}
+
+#wrap>header > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(244,215,82);
+}
+
+#wrap > header img {
+    display: block;
+    height: 5rem;
+}
+#wrap>header h1 {
+    margin: 0;
+    padding-left: .5rem;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    -webkit-text-stroke: 0.85px rgb(0, 0, 0);
+}
+
+#wrap>header small {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: normal;
+    font-weight: normal;
+    /* Experimental */
+    -webkit-text-stroke: 0 black;
+}
+
+/* Formulário de busca no header */
+#wrap>header form {
+    display: flex;
+    padding: 1rem;
+}
+
+#wrap>header form input {
+    width: 100%;
+    border-radius: .3rem 0 0 .3rem;
+    background-color: white;
+}
+#wrap>header form button {
+    border-radius: 0 .3rem .3rem 0;
+    background-color: white;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+#wrap>header form button:hover {
+    background-color: rgb(229, 229, 229);
+    cursor: pointer;
+}
+
+/*************************
+***** Menu Principal *****
+**************************/
+
+#wrap>nav {
+    background-color: rgb(0, 0, 0);
+    margin: .25rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#wrap>nav a {
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .5rem;
+    align-items: center;
+    transition: .3s;
+}
+#wrap>nav a:hover {
+    color:rgb(244,215,82); 
+}
+
+/* link de início */
+
+#wrap>nav a:first-child {
+    margin-right: auto;
+}
+
+#wrap>nav i {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+#wrap>nav span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }

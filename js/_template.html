@@ -11,29 +11,83 @@
 </head>
 
 <body>
-    <div id="whap">
+    <div id="wrap">
         <header>
-            <div>
+            <a href="/" title="Clique para acessar a página inicial">
                 <img src="/image/logo1.png" alt="Logotipo do SnakeBlog">
                 <h1>
                     SnakeBlog
                     <small>Pra quem entende de cobras</small>
                 </h1>
-            </div>
+            </a>
             <form action="/search.html" method="get">
-                <input type="search" name="q" id="headerSearch">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" name="q" id="headerSearch" placeholder="Procurar por...">
+                <button type="submit" title="Clique para iniciar a busca"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
 
         </header>
 
-        <nav></nav>
+        <nav>
+
+            <a href="/" title="Ir para a página inicial">
+                <i class="fa-solid fa-house-chimney fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="/contacts.html" title="Clique para fazer contato">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="/about.html" title="Saiba mais sobre a gente">
+                <i class="fa-solid fa-circle-info fa-fw"></i>
+                <span>Sobre</span>
+            </a>
+
+        </nav>
+
         <main>
-            <article></article>
-            <aside></aside>
+            <article>
+                <h2>Título do artigo</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iure ipsam sapiente eligendi aliquam impedit molestiae deleniti repudiandae eos incidunt vero facilis non, dolor, nam corrupti? Libero vel dolorum neque!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo totam eaque, exercitationem, corporis quos unde deserunt ut quas repellendus accusamus quis? Dolorem mollitia quidem, soluta quaerat animi sit repellendus.</p>
+<img src="https://picsum.photos/200/300" alt="Imagem aleatória">
+            </article>
+            <aside>
+                <h3>Veja também</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Quaerat optio pariatur aliquam repellat amet ipsam ipsa perferendis voluptatum possimus odit ipsum nulla consectetur, molestiae natus cumque.</p>
+            </aside>
         </main>
-        <footer class="site-title">RODAPÉ</footer>
+
+        <footer class="site-title">
+            
+            <div class="footer_top">
+
+                <a href="/">HOME</a>
+                <div>&copy; Copyright 2024 Fulano</div>
+                <a href="#top">TOPO</a>
+
+            </div>
+
+            <div class="footer_botton">
+
+                <nav class="social">
+                    <a href="https://facebook"></a>
+                    <a href="https://insta"></a>
+                    <a href="https://github"></a>
+                </nav>
+
+                <nav class="fast">
+                    <a href="/policyes.html"></a>
+                    <a href="/contacts.html"></a>
+                    <a href="/about.html"></a>
+                </nav>
+
+            </div>
+
+        </footer>
+
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 
