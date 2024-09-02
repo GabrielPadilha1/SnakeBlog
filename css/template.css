@@ -6,6 +6,26 @@
     outline: none;
 }
 
+/* Reset de formulários */
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem .75rem;
+    border: none;
+}
+/* Reset dos links */
+a {
+    text-decoration: none;
+    color: steelblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+
 html, 
 body,
 #wrap {
@@ -29,15 +49,18 @@ body {
 
     max-width: 1024px; 
     min-width: 280px;
-    margin: auto; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
-
-/* Reset de formulários */
-input, button{
-    font-family: inherit;
-    font-size: inherit;
-    padding: .5rem .75rem;
-    border: none;
+/* Estiliza filhos de #wrap */
+#wrap>header,
+#wrap>nav,
+#wrap>footer,
+#wrap>main>article,
+#wrap>main>aside {
+    margin: .5rem;
+    border-radius: .5rem;
 }
 
 /********************
@@ -141,4 +164,124 @@ input, button{
 #wrap>nav span {
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+/****************************
+ ***** Template central *****
+ ****************************/
+
+ #wrap>main {
+    /* Sticky Footer */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap>main>article {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1rem;
+    /* Sticky Footer */
+    flex-grow: 1;
+}
+
+#wrap>main>article>h2:first-child,
+#wrap>main>aside>h3:first-child {
+    margin: 0;
+}
+
+#wrap>main>aside {
+    background-color: rgb(255, 243, 219);
+    padding: 1rem;
+}
+
+/******************
+ ***** Rodapé *****
+ ******************/
+
+#wrap>footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#wrap>footer a {
+    color: white;
+}
+
+#wrap>footer a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.footer_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: 1px dotted gray;
+}
+
+.footer_top a i {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.footer_top div {
+    font-size: small;
+}
+
+.footer_botton {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.footer_botton nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.9;
+}
+
+.footer_botton nav h4 {
+    margin: 0 0 .5rem 0;
+}
+
+.footer_botton nav a {
+    margin-left: 1rem;
+}
+
+/********************************************
+ ***** Resoluções de 640 pixels ou mais *****
+ ***** Usando Media Queries             *****
+ ********************************************/
+
+@media screen and (min-width: 575px) {
+
+    /* altera o cabeçalho */
+    #wrap>header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Altera o menu */
+    #wrap>nav a {
+        flex-direction: row;
+    }
+
+    #wrap>nav a i {
+        font-size: 1.2rem;
+        margin: 0.20rem 0 0;
+    }
+}
+
+@media screen and (min-width: 640px) {
+
+    #wrap>main {
+        flex-direction: row;
+    }
+
+    #wrap>main>aside {
+        min-width: 11rem;
+        max-width: 11rem;
+    }
+
 }
