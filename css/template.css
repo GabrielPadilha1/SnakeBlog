@@ -8,12 +8,12 @@
 
 /* Reset de formulários */
 input,
+textarea,
 button {
     font-family: inherit;
     font-size: inherit;
-    padding: .5rem .75rem;
-    border: none;
 }
+
 /* Reset dos links */
 a {
     text-decoration: none;
@@ -69,8 +69,8 @@ body {
 
 #wrap>header {
     background-color:rgb(106, 176, 204);
-    margin: .25rem;
-    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #wrap>header > a {
@@ -109,16 +109,20 @@ body {
 }
 
 #wrap>header form input {
-    width: 100%;
+    flex-grow: 1;
     border-radius: .3rem 0 0 .3rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem .75rem;
+    border: none;
 }
+
 #wrap>header form button {
     border-radius: 0 .3rem .3rem 0;
-    background-color: white;
-    padding-left: .25rem;
-    padding-right: .25rem;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem .25rem;
+    border: none;
 }
+
 #wrap>header form button:hover {
     background-color: rgb(229, 229, 229);
     cursor: pointer;
@@ -130,8 +134,6 @@ body {
 
 #wrap>nav {
     background-color: rgb(0, 0, 0);
-    margin: .25rem;
-    border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -207,7 +209,7 @@ body {
 }
 
 #wrap>footer a:hover {
-    color: orange;
+    color: rgb(244,215,82); 
     text-decoration: none;
 }
 
