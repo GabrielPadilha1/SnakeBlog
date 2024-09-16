@@ -11,35 +11,46 @@
     <!-- CSS específico desta página -->
     <link rel="stylesheet" href="/css/contacts.css">
 
+    <!-- Define o ícone de favoritos -->
     <link rel="shortcut icon" href="/image/logo1.png">
-    <title>SnakeBlog .:. Faça contato</title>
+
+    <!-- Título desta página -->
+    <title>SnakeBlog .:. Pra quem entende de cobras.</title>
 </head>
 
 <body>
+
     <div id="wrap">
+
         <header>
+
+            <!-- Ao clicar, vai para a página inicial (raiz) -->
             <a href="/" title="Clique para acessar a página inicial">
                 <img src="/image/logo1.png" alt="Logotipo do SnakeBlog">
                 <h1>
                     SnakeBlog
                     <small>Pra quem entende de cobras</small>
                 </h1>
+                <span id="toggleMenu">
+                    <i class="fa-solid fa-bars fa-fw"></i>
+                </span>
             </a>
+
+            <!-- formulário de busca -->
             <form action="/search.html" method="get">
                 <input type="search" name="q" id="headerSearch" placeholder="Procurar por...">
                 <button type="submit" title="Clique para iniciar a busca"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
+                        class="fa-solid fa-magnifying-glass fa-fw"></i></button>
             </form>
 
         </header>
 
         <nav>
-
             <a href="/" title="Ir para a página inicial">
-                <i class="fa-solid fa-house-chimney fa-fw"></i>
+                <i class="fa-solid fa-house fa-fw"></i>
                 <span>Início</span>
             </a>
-            <a href="/contacts.html" title="Clique para fazer contato">
+            <a href="/contacts.html" title="Ir para Faça Contato">
                 <i class="fa-solid fa-comments fa-fw"></i>
                 <span>Contatos</span>
             </a>
@@ -47,26 +58,30 @@
                 <i class="fa-solid fa-circle-info fa-fw"></i>
                 <span>Sobre</span>
             </a>
-
+            <a href="/policies.html" title="Políticas do site">
+                <i class="fa-solid fa-lock fa-fw"></i>
+                <span>Privacidade</span>
+            </a>
         </nav>
 
         <main>
+
             <article>
+
                 <h2>Faça Contato</h2>
                 <p>Preencha os campos abaixo para entrar em contato com a equipe <strong>SnakeBlog</strong>.</p>
-                <p class="center red">*Todos os campos obrigatórios</p>
+                <p class="center red">Todos os campos obrigatórios.</p>
 
                 <form action="contacts.html#" method="post">
 
-                    <!-- p gera já gera os parágrafos, e deixa mais organizado -->
                     <p>
                         <label for="fieldName">Seu nome:</label>
                         <input type="text" name="name" id="fieldName" required minlength="3">
                     </p>
 
                     <p>
-                        <label for="fieldEmail">Seu email:</label>
-                        <input type="email" name="subject" id="fieldEmail" required>
+                        <label for="fieldEmail">Seu e-mail:</label>
+                        <input type="email" name="email" id="fieldEmail" required>
                     </p>
 
                     <p>
@@ -87,26 +102,28 @@
                 </form>
 
             </article>
+
             <aside>
+
                 <h3><i class="fa-solid fa-plus"></i> Contatos</h3>
 
                 <p>Acesse nossas redes sociais para saber mais sobre o <strong>SnakeBlog</strong>.</p>
 
                 <div>
-                    <a href="https://facebook.com/snakeblog" target="_blank">
-                        <i class="fa-brands fa-facebook fa-fw fa-3x" style="color: #1877f2;"></i>
+                    <a href="https://facebook.com/pyblog" target="_blank">
+                        <i class="fa-brands fa-facebook fa-fw fa-3x" style="color: #1877f2"></i>
                     </a>
 
-                    <a href="https://linkedin.com/snakeblog" target="_blank">
-                        <i class="fa-brands fa-linkedin-in fa-fw fa-3x" style="color: #004182;"></i>
+                    <a href="https://linkedin.com/Pyblog" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fa-fw fa-3x" style="color: #b24020"></i>
                     </a>
 
-                    <a href="https://youtube.com/snakeblog0" target="_blank">
+                    <a href="https://youtube.com/SnakeBlog" target="_blank">
                         <i class="fa-brands fa-youtube fa-fw fa-3x" style="color: #ff0000;"></i>
                     </a>
 
-                    <a href="https://github.com/snakeblog" target="_blank" style="color: #6e5494">
-                        <i class="fa-brands fa-github fa-fw fa-3x"></i>
+                    <a href="https://github.com/SnakeBlog" target="_blank">
+                        <i class="fa-brands fa-github fa-fw fa-3x" style="color: #6e5494;"></i>
                     </a>
                 </div>
 
@@ -114,7 +131,7 @@
 
         </main>
 
-        <footer class="site-title">
+        <footer>
 
             <div class="footer_top">
 
@@ -126,20 +143,22 @@
 
             <div class="footer_botton">
 
-                <h4>Redes Sociais</h4>
+                <nav>
 
-                <a href="https://facebook.com/snakeblog">
-                    <i class="fa-brands fa-square-facebook fa-fw"></i>
-                    <span>Facebook</span>
-                </a>
-                <a href="https://linkedin.com/snakeblog">
-                    <i class="fa-brands fa-linkedin fa-fw"></i>
-                    <span>Linkedin</span>
-                </a>
-                <a href="https://github.com/snakeblog">
-                    <i class="fa-brands fa-square-github fa-fw"></i>
-                    <span>GitHub</span>
-                </a>
+                    <h4>Redes Sociais</h4>
+
+                    <a href="https://facebook.com/SnakeBlog123">
+                        <i class="fa-brands fa-square-facebook fa-fw"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://linkedin.com/SnakeBlog123">
+                        <i class="fa-brands fa-linkedin fa-fw"></i>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://github.com/SnakeBlog123">
+                        <i class="fa-brands fa-square-github fa-fw"></i>
+                        <span>GitHub</span>
+                    </a>
                 </nav>
 
 
@@ -147,7 +166,7 @@
 
                     <h4>Links rápidos</h4>
 
-                    <a href="/policyes.html">
+                    <a href="/policies.html">
                         <i class="fa-solid fa-lock fa-fw"></i>
                         <span>Privacidade</span>
                     </a>
@@ -165,10 +184,13 @@
 
         </footer>
 
-        <hr style="margin: 0; border: 1px solid transparent">
+        <hr style="margin: .5rem; border: 1px solid transparent">
     </div>
 
+    <div id="menuSmoke"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/template.js"></script>
 </body>
 
 </html>
